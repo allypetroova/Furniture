@@ -58,7 +58,6 @@ a{
 
 .furnitures{
     background: #B5D9D2;
-    width: 1728px;
     height: 864px;
 }
 
@@ -96,3 +95,25 @@ a{
     color: #fff;
     cursor: pointer;
 }
+
+/*-------------------info-----------------*/
+.info{
+    background: #B5D9D2;
+    padding: 107px 0 115px;
+    margin: 63px 0 104px;
+}
+
+.info__title{
+    font-size: 36px;
+}
+
+.info__btn{
+    padding: 20px 53px 21px 58px;
+    font-size: 26px;
+    color: #fff;
+    background-color: #2A7361;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+}
+
