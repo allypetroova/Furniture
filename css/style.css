@@ -96,6 +96,29 @@ a{
     cursor: pointer;
 }
 
+.wraper{
+    position: relative;
+}
+
+.inside_1{
+    position: absolute;
+    right: 590px;
+    bottom: -20px;
+}
+
+.inside_2{
+    position: absolute;
+    right: 300px;
+    bottom: -20px;
+}
+
+.inside_3{
+    position: absolute;
+    right: 0;
+    bottom: 150px;
+}
+
+
 /*-------------------info-----------------*/
 .info{
     background: #B5D9D2;
@@ -105,6 +128,13 @@ a{
 
 .info__title{
     font-size: 36px;
+    width: 412px;
+    padding-bottom: 40px;
+}
+
+.info__text{
+    padding-bottom: 40px;
+    width: 375px;
 }
 
 .info__btn{
@@ -140,4 +170,63 @@ a{
     grid-column-gap: 18px;
     grid-row-gap: 20px;
     padding-bottom: 110px;
+}
+
+/*-------------------booking-----------------*/
+
+.booking{
+    padding: 147px 0 61px;
+    background: #E4F1EF;
+}
+
+
+.booking__form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.booking__title{
+    font-size: 36px;
+    margin-bottom: 64px;
+}
+
+.booking__text{
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.booking__imput{
+    margin-bottom: 33px;
+    width: 687px;
+    height: 74px;
+    border: 0.5px solid rgba(0, 0, 0, 0.20);
+}
+
+.booking__area{
+    padding: 15px;
+    width: 687px;
+    height: 262px;
+    border: 0.5px solid rgba(0, 0, 0, 0.20);
+    margin-bottom: 33px;
+}
+
+.booking__btn{
+    padding: 21px 89px;
+    color: #fff;
+    font-size: 32px;
+    border-radius: 45px;
+    border: none;
+    background-color: #2A7361;
+    cursor: pointer;
+}
+
+.img_wrap{
+    position: relative;
+}
+
+.booking__img{
+    position: absolute;
+    right: 0;
+    bottom: 50px;
 }
