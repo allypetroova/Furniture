@@ -57,7 +57,7 @@ a{
 /*-------------------furnitures-----------------*/
 
 .furnitures{
-    background: #B5D9D2;
+    background: #E4F1EF;
     height: 864px;
 }
 
@@ -121,9 +121,15 @@ a{
 
 /*-------------------info-----------------*/
 .info{
-    background: #B5D9D2;
+    background: #E4F1EF;
     padding: 107px 0 115px;
     margin: 63px 0 104px;
+}
+
+.info__box{
+    display: grid;
+    grid-template-columns: 412px 747px;
+    grid-gap: 284px;
 }
 
 .info__title{
@@ -147,6 +153,31 @@ a{
     cursor: pointer;
 }
 
+.info__group{
+    display: grid;
+    grid-template-columns: repeat(2,353px);
+    grid-row-gap: 25px;
+    grid-column-gap: 60px;
+}
+
+.info__group-input{
+    position: relative;
+}
+
+.info__icon{
+    position: absolute;
+    left: -60px;
+}
+
+.info__group-title{
+    padding-bottom: 20px;
+    font-size: 36px;
+}
+
+.info__group-text{
+    max-width: 275px;
+}
+
 /*-------------------gallery-----------------*/
 
 .gallery{
@@ -155,21 +186,28 @@ a{
 
 .gallery__title{
     margin-bottom: 28px;
+    font-weight: 600;
     font-size: 56px;
 }
 
-.gallery__text{
-    display: inline-block;
-    width: 400px;
+.gallery__images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+    padding: 56px 0 110px;
 }
 
-.gallery__item {
-    display: grid;
-    grid-template-columns: 952px 480px;
-    grid-template-rows: 502px 240px;
-    grid-column-gap: 18px;
-    grid-row-gap: 20px;
-    padding-bottom: 110px;
+.gallery__images img:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1/3;
+}
+
+.gallery__images img:nth-child(6) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
 }
 
 /*-------------------booking-----------------*/
@@ -177,6 +215,7 @@ a{
 .booking{
     padding: 147px 0 61px;
     background: #E4F1EF;
+    margin-bottom: 60px;
 }
 
 
@@ -197,16 +236,19 @@ a{
 }
 
 .booking__imput{
+    padding: 20px;
+    font-size: 26px;
     margin-bottom: 33px;
-    width: 687px;
-    height: 74px;
+    width: 647px;
+    height: 34px;
     border: 0.5px solid rgba(0, 0, 0, 0.20);
 }
 
 .booking__area{
-    padding: 15px;
-    width: 687px;
-    height: 262px;
+    padding: 20px;
+    font-size: 26px;
+    width: 647px;
+    height: 222px;
     border: 0.5px solid rgba(0, 0, 0, 0.20);
     margin-bottom: 33px;
 }
@@ -229,4 +271,17 @@ a{
     position: absolute;
     right: 0;
     bottom: 50px;
+}
+
+/*-------------------footer-----------------*/
+
+.footer{
+    background-color: #E4F1EF;
+}
+
+.footer__text{
+    padding: 50px 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
 }
